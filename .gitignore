@@ -1,0 +1,7 @@
+node_modules/
+.rpt2_cache/
+dist/
+yarn-error.log
+backstop/backstop_data
+backstop/bitmaps_test
+backstop/config.json
