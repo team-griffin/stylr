@@ -16,11 +16,14 @@ const withHover = (Component: React.ComponentType<any>) => (ownerProps: any) => 
     setActive(false);
   };
 
+  const hocus = focused || hovering;
+
   const props = {
     ...ownerProps,
     hovering,
     focused,
     active,
+    hocus,
   };
 
   return (
