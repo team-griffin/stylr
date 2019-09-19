@@ -101,6 +101,8 @@ const Interactive = withHover((props) => {
       {props.hovering ? 'Hovering' : ''}
       {props.focused ? 'Focused' : ''}
       {props.active ? 'Active' : ''}
+      {/* when you want the same style for hover and focus */}
+      {props.hocus ? 'Hocus' : ''}
     </span>
   );
 });
