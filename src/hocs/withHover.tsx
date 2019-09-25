@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
 
 const withHover = (Component: React.ComponentType<any>) => (ownerProps: any) => {
-  const [ hovering, setHovering ] = useState(false);
-  const [ focused, setFocused ] = useState(false);
+  const [ hover, setHover ] = useState(false);
+  const [ focus, setFocus ] = useState(false);
   const [ active, setActive ] = useState(false);
 
-  const handleMouseOver = () => setHovering(true);
-  const handleMouseLeave = () => setHovering(false);
+  const handleMouseOver = () => setHover(true);
+  const handleMouseLeave = () => setHover(false);
   const handleFocus = () => {
-    setFocused(true);
+    setFocus(true);
     setActive(true);
   };
   const handleBlur = () => {
-    setFocused(false);
+    setFocus(false);
     setActive(false);
   };
 
-  const hocus = focused || hovering;
+  const hocus = focus || hover;
 
   const props = {
     ...ownerProps,
-    hovering,
-    focused,
+    hover,
+    focus,
     active,
     hocus,
   };

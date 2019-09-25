@@ -98,8 +98,8 @@ const { styles } = useStyles({
 const Interactive = withHover((props) => {
   return (
     <span>
-      {props.hovering ? 'Hovering' : ''}
-      {props.focused ? 'Focused' : ''}
+      {props.hover ? 'Hovering' : ''}
+      {props.focus ? 'Focused' : ''}
       {props.active ? 'Active' : ''}
       {/* when you want the same style for hover and focus */}
       {props.hocus ? 'Hocus' : ''}
