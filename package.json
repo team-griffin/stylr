@@ -1,6 +1,6 @@
 {
   "name": "@team-griffin/stylr",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "main": "dist/cjs/stylr.js",
   "module": "dist/es/stylr.js",
   "types": "dist/es/index.d.ts",
