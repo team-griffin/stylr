@@ -88,14 +88,15 @@ const { styles } = useStyles({
 ### caveats
 - due to memoization techniques, any props used by your stylesheet should be passed in as modifiers, otherwise it will not know to recompute the styles when they change
 
-## withHover
+## withInteraction 
+(alias withHover)
 ```ts
 (WrappedComponent) => Component
 ```
 
 ### usage
 ```tsx
-const Interactive = withHover((props) => {
+const Interactive = withInteraction((props) => {
   return (
     <span>
       {props.hover ? 'Hovering' : ''}

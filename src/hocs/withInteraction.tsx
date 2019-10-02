@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const withHover = (Component: React.ComponentType<any>) => (ownerProps: any) => {
+const withInteraction = (Component: React.ComponentType<any>) => (ownerProps: any) => {
   const [ hover, setHover ] = useState(false);
   const [ focus, setFocus ] = useState(false);
   const [ active, setActive ] = useState(false);
@@ -43,4 +43,4 @@ const withHover = (Component: React.ComponentType<any>) => (ownerProps: any) => 
   );
 };
 
-export default withHover;
+export default withInteraction;
