@@ -1,1 +1,4 @@
-export { default as withHover } from './withHover';
+export {
+  default as withHover,
+  default as withInteraction,
+} from './withInteraction';
