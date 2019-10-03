@@ -108,3 +108,6 @@ const Interactive = withInteraction((props) => {
   );
 });
 ```
+
+### removeInteraction
+A hook which omits the props from withInteraction. Use when you want the interaction props for the stylesheet but then to exclude from the actual component; where you use in a component that spreads props you may get `Received "false" for a non-boolean attribute` console warnings if you don't do this.
