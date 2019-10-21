@@ -24,7 +24,7 @@ const normalizeModifiers = <T extends Indexer>(_modifiers: T | T[] | undefined |
   return modifiers.map((props) => {
     const initial = {} as T;
     return reduceObj((acc, value, key) => {
-      if (value === true || !isPrimitive(value)) {
+      if (!isPrimitive(value)) {
         return {
           ...acc,
           [key]: value,
