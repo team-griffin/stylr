@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const withInteraction = (Component: React.ComponentType<any>) => (ownerProps: any) => {
+const withInteraction = <P>(Component: React.ComponentType<P>) => (ownerProps: P) => {
   const [ hover, setHover ] = useState(false);
   const [ focus, setFocus ] = useState(false);
   const [ active, setActive ] = useState(false);
