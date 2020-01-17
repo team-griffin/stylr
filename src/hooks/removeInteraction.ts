@@ -1,11 +1,10 @@
-import { mapProps } from '@team-griffin/rehook';
-import * as r from 'ramda';
+import { omitProps } from '@team-griffin/rehook';
 
-const removeInteraction = mapProps(r.omit([
+const removeInteraction = omitProps([
   'active',
   'hover',
   'focus',
   'hocus',
-]));
+]);
 
 export default removeInteraction;

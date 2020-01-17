@@ -1108,10 +1108,10 @@
     eslint-plugin-mocha "^4.9.0"
     eslint-plugin-react "^7.5.1"
 
-"@team-griffin/rehook@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@team-griffin/rehook/-/rehook-1.3.0.tgz#0854a1dd5f6ab5361ceb079ec741baf90bf89a45"
-  integrity sha512-tP/YaPdMDP9DC3NS4LSONQm8s9I4o8QcLtb76n3Y4HRU0KkzWowAifEKyXmCRDxhrM0k3JHX6CZCIr2APGl70Q==
+"@team-griffin/rehook@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@team-griffin/rehook/-/rehook-2.2.0.tgz#e1781163b6da8e190a760080cee73b86be9ac533"
+  integrity sha512-9bHyr/9gAd3dxMoCORoEWGvYzBiIzigwfCYV2Z0jI2MFy1dI16UDP9k+Z4l8fkiFjU+HgenzJ7nHfKsgOK8tpg==
 
 "@types/chai@^4.1.7":
   version "4.2.0"
