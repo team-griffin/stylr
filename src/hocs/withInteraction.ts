@@ -1,4 +1,5 @@
 import React, { createElement, useState } from 'react';
+import { Omit } from 'utility-types';
 
 interface InteractionProps {
   hover: boolean,
@@ -6,10 +7,11 @@ interface InteractionProps {
   active: boolean,
   hocus: boolean,
 }
+type InteractionPropKeys = keyof InteractionProps;
 
-const withInteraction = <P>(
-  Component: React.ComponentType<P & Partial<InteractionProps>>,
-): React.ComponentType<P> => (ownerProps: P) => {
+const withInteraction = <P extends Partial<InteractionProps>>(
+  Component: React.ComponentType<P>,
+): React.ComponentType<Omit<P, InteractionPropKeys>> => (ownerProps: P) => {
     const [ hover, setHover ] = useState(false);
     const [ focus, setFocus ] = useState(false);
     const [ active, setActive ] = useState(false);
