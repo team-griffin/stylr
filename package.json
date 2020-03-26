@@ -1,6 +1,6 @@
 {
   "name": "@team-griffin/stylr",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "main": "dist/cjs/stylr.js",
   "module": "dist/es/stylr.js",
   "types": "dist/es/index.d.ts",
@@ -48,6 +48,7 @@
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
     "@types/ramda": "^0.26.26",
+    "@types/react": "^16.9.2",
     "@types/sinon": "^7.0.6",
     "babel-strip-test-code": "^1.1.12",
     "browser-env": "^3.2.6",
@@ -76,7 +77,6 @@
   },
   "dependencies": {
     "@team-griffin/rehook": "^2.2.0",
-    "@types/react": "^16.9.2",
     "css-vendor": "^2.0.6"
   },
   "peerDependencies": {
