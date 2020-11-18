@@ -68,7 +68,7 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript2": "^0.24.0",
-    "semantic-release": "^15.13.3",
+    "semantic-release": "^17.2.3",
     "sinon": "^7.2.3",
     "tsx-control-statements": "^2.16.1",
     "typescript": "3.3.x",
